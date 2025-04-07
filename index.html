@@ -17,13 +17,11 @@
       justify-content: center;
     }
 
-    <style>
-  img.main {
-    max-width: 40%; /* antes era 90% */
-    height: auto;
-    margin: 20px;
-  }
-</style>
+    img.main {
+      max-width: 40%;
+      height: auto;
+      margin: 20px;
+    }
 
     .corner-img {
       position: absolute;
@@ -38,22 +36,31 @@
       position: absolute;
       bottom: 10px;
       right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     .bottom-img {
       width: 120px;
       height: auto;
       border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .bottom-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px 4px rgba(105, 198, 157, 0.5);
     }
 
     .text-banner {
-      font-size: 42px;
+      font-size: 48px;
       font-style: italic;
       font-weight: bold;
       color: #69C69D;
       -webkit-text-stroke: 0.3px #F7EF6D;
       text-align: center;
-      margin: 30px 20px 20px 20px;
+      margin: 30px 20px 10px 20px;
     }
   </style>
 </head>
