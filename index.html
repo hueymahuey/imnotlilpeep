@@ -1,5 +1,4 @@
-
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +11,16 @@
       font-family: "Poplar Std", Impact, sans-serif;
       position: relative;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img.main {
+      max-width: 40%;
+      height: auto;
+      margin: 20px;
     }
 
     .corner-img {
@@ -44,36 +53,14 @@
       box-shadow: 0 0 12px 4px rgba(105, 198, 157, 0.5);
     }
 
-    .text-banner-top {
-      font-size: 36px;
+    .text-banner {
+      font-size: 48px;
       font-style: italic;
       font-weight: bold;
       color: #69C69D;
-      -webkit-text-stroke: 0.1px #F7EF6D;
+      -webkit-text-stroke: 0.3px #F7EF6D;
       text-align: center;
-      margin: 100px 20px 10px 20px;
-    }
-
-    .text-banner-bottom {
-      font-size: 28px;
-      font-style: italic;
-      font-weight: bold;
-      color: #69C69D;
-      -webkit-text-stroke: 0.1px #F7EF6D;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .main-container {
-  transform: scale(0.8);
-  transform-origin: center;
-}
-    }
-
-    img.main {
-      max-width: 150vw;
-      height: 10;
-      border-radius: 8px;
+      margin: 30px 20px 10px 20px;
     }
   </style>
 </head>
@@ -83,19 +70,17 @@
   <img class="corner-img" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep10.jpg" alt="Peep corner">
 
   <!-- Intro text -->
-  <div class="text-banner-top">
+  <div class="text-banner">
     1000 limited meme token inspired in the creator of the first pump and dump token in Taraxa chain.
   </div>
 
   <!-- Main content -->
-  <div class="main-container">
-    <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep11.png" alt="A static image">
-    <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/icegif-103.gif" alt="A gif">
-  </div>
+  <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep11.png" alt="A static image">
+  <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/icegif-103.gif" alt="A gif">
 
   <!-- CTA text -->
-  <div class="text-banner-bottom">
-    buy LIL PEEP at FOMO.BIZ
+  <div class="text-banner">
+    buy LIL PEEP (contract number) at FOMO.BIZ
   </div>
 
   <!-- Bottom-right image with link -->
