@@ -2,27 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blank Page with GIF and Image</title>
+  <title>LIL PEEP Token Page</title>
   <style>
     body {
       background-color: white;
       margin: 0;
+      padding: 0;
+      font-family: "Poplar Std", Impact, sans-serif;
+      position: relative;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
     }
-    img {
+
+    img.main {
       max-width: 90%;
       height: auto;
       margin: 20px;
     }
+
+    .corner-img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .bottom-img {
+      width: 120px;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .text-banner {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: bold;
+      color: #69C69D;
+      -webkit-text-stroke: 2px #F7EF6D;
+      text-align: center;
+      margin: 30px 20px 20px 20px;
+    }
   </style>
 </head>
 <body>
-  <!-- Replace the src with your own GIF and image URLs -->
-  <img src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/icegif-103.gif" alt="A gif">
-  <img src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep.png" alt="A static image">
+
+  <!-- Top-right image -->
+  <img class="corner-img" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep10.jpg" alt="Peep corner">
+
+  <!-- Main content -->
+  <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/icegif-103.gif" alt="A gif">
+  <img class="main" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep.png" alt="A static image">
+
+  <!-- Text with style -->
+  <div class="text-banner">
+    buy LIL PEEP (contract number) at FOMO.BIZ
+  </div>
+
+  <!-- Bottom image -->
+  <img class="bottom-img" src="https://raw.githubusercontent.com/hueymahuey/imnotlilpeep/main/lilpeep10.jpg" alt="Peep bottom">
+
 </body>
 </html>
